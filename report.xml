@@ -1,42 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="4" errors="0" time="1.36">
-  <testsuite name="__tests__\main.test.js" errors="0" failures="3" skipped="0" timestamp="2020-10-27T21:39:41" time="0.486" tests="4">
-    <testcase classname="Test 1" name="Passing test" time="0.001">
+<testsuites name="vitest tests" tests="3" failures="1" errors="0" time="0.448">
+  <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T09:19:02.659Z"
+    hostname="macOS-Quangs-Mac-mini.local" tests="3" failures="1" errors="0" skipped="0"
+    time="0.021">
+    <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
     </testcase>
-    <testcase classname="Test 1 › Test 1.1" name="Failing test" time="0.002">
-      <failure>Error: expect(received).toBeTruthy()
-
-Received: false
-    at Object.&lt;anonymous&gt; (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\__tests__\main.test.js:10:21)
-    at Object.asyncJestTest (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
-    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
-    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
-    </testcase>
-    <testcase classname="Test 1 › Test 1.1" name="Exception in target unit" time="0">
-      <failure>Error: Some error
-    at Object.throwError (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\lib\main.js:2:9)
-    at Object.&lt;anonymous&gt; (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\__tests__\main.test.js:14:11)
-    at Object.asyncJestTest (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
-    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:45:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
-    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:75:41
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0">
     </testcase>
     <testcase classname="Test 2" name="Exception in test" time="0">
       <failure>AssertionError: expected 4 to be 3 // Object.is equality
 
-- Expected
-+ Received
+        - Expected
+        + Received
 
-- 3
-+ 4
+        - 3
+        + 4
 
- ❯ src/__test__/hello.test.tsx:24:21
- </failure>
+        ❯ src/__test__/hello.test.tsx:24:21
+      </failure>
     </testcase>
   </testsuite>
 </testsuites>
