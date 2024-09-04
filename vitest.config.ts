@@ -9,10 +9,10 @@ export default defineConfig({
         environment: 'jsdom',
         root: '.',
         dir: './lib/__test__/',
-        reporters: process.env.GITHUB_ACTIONS ? ['dot', 'github-actions'] : ['dot'],
-        outputFile: {
-            junit: './report.xml'
-        },
+        reporters: ['default', 'junit'],
+        // outputFile: {
+        //     junit: './report.xml'
+        // },
 
         setupFiles: "./lib/__test__/setup.js",
         alias: {

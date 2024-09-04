@@ -21,7 +21,7 @@ AssertionError: expected 4 to be 3 // Object.is equality
 - 3
 + 4
 
- ❯ src/__test__/hello.test.tsx:24:21
+src/__test__/hello.test.tsx:24:21
             </failure>
         </testcase>
     </testsuite>
