@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="3" failures="1" errors="0" time="0.559">
-    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T08:15:49.751Z" hostname="macOS-Quangs-Mac-mini.local" tests="3" failures="1" errors="0" skipped="0" time="0.019">
-        <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
-            <system-err>
-Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
-Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
-Warning: unmountComponentAtNode is deprecated and will be removed in the next major release. Switch to the createRoot API. Learn more: https://reactjs.org/link/switch-to-createroot
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This is a basic JUnit-style XML example to highlight the basis structure.
 
-            </system-err>
-        </testcase>
-        <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0">
-        </testcase>
-        <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0.003">
-            <failure message="expected 4 to be 3 // Object.is equality" type="AssertionError">
-AssertionError: expected 4 to be 3 // Object.is equality
-
-- Expected
-+ Received
-
-- 3
-+ 4
-
-src/__test__/hello.test.tsx:24:21
+Example by Testmo. Copyright 2023 Testmo GmbH. All rights reserved.
+Testmo test management software - https://www.testmo.com/
+-->
+<testsuites time="15.682687">
+    <testsuite name="Tests.Registration" time="6.605871">
+        <testcase name="testCase1" classname="Tests.Registration" time="2.113871" />
+        <testcase name="testCase2" classname="Tests.Registration" time="1.051" />
+        <testcase name="testCase3" classname="Tests.Registration" time="3.441" />
+    </testsuite>
+    <testsuite name="Tests.Authentication" time="9.076816">
+        <testsuite name="Tests.Authentication.Login" time="4.356">
+            <testcase name="testCase4" classname="Tests.Authentication.Login" time="2.244" />
+            <testcase name="testCase5" classname="Tests.Authentication.Login" time="0.781" />
+            <testcase name="testCase6" classname="Tests.Authentication.Login" time="1.331" />
+        </testsuite>
+        <testcase name="testCase7" classname="Tests.Authentication" time="2.508" />
+        <testcase name="testCase8" classname="Tests.Authentication" time="1.230816" />
+        <testcase name="testCase9" classname="Tests.Authentication" time="0.982">
+            <failure message="Assertion error message" type="AssertionError">
+                <!-- Call stack printed here -->
             </failure>
         </testcase>
     </testsuite>
