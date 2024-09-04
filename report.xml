@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="1" failures="1" errors="0" time="0.608">
-    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-03T08:49:34.677Z" hostname="QHuys-MBP.lan" tests="1" failures="1" errors="0" skipped="0" time="0">
-        <testcase classname="lib/__test__/hello.test.js" name="lib/__test__/hello.test.js" time="0">
-            <failure message="Vitest cannot be imported in a CommonJS module using require(). Please use &quot;import&quot; instead.
+<testsuites name="vitest tests" tests="2" failures="0" errors="0" time="0.599">
+    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T03:27:30.993Z" hostname="macOS-Quangs-Mac-mini.local" tests="2" failures="0" errors="0" skipped="0" time="0.017">
+        <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
+            <system-err>
+Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+Warning: unmountComponentAtNode is deprecated and will be removed in the next major release. Switch to the createRoot API. Learn more: https://reactjs.org/link/switch-to-createroot
 
-If you are using &quot;import&quot; in your source code, then it&apos;s possible it was bundled into require() automatically by your bundler. In that case, do not bundle CommonJS output since it will never work with Vitest, or use dynamic import() which is available in all CommonJS modules." type="Error">
-Error: Vitest cannot be imported in a CommonJS module using require(). Please use &quot;import&quot; instead.
-
-If you are using &quot;import&quot; in your source code, then it&apos;s possible it was bundled into require() automatically by your bundler. In that case, do not bundle CommonJS output since it will never work with Vitest, or use dynamic import() which is available in all CommonJS modules.
- ❯ Object.&lt;anonymous&gt; node_modules/vitest/index.cjs:1:7
- ❯ src/__test__/setup.ts:3:1
-
-            </failure>
+            </system-err>
+        </testcase>
+        <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0">
         </testcase>
     </testsuite>
 </testsuites>

@@ -1,20 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "plugins": [
-      {
-        "transform": "typescript-transform-paths"
-      },
-      {
-        "transform": "typescript-transform-paths",
-        "afterDeclarations": true
-      }
-    ],
     "declarationDir": "lib",
     "declaration": true,
-    "moduleResolution": "node",
-    "target": "es5",
-    "module": "CommonJS",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "lib": [
       "dom",
       "es2015",
@@ -43,4 +34,9 @@
   "include": [
     "src"
   ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
