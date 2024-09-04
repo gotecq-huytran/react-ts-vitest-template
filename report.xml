@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="2" failures="0" errors="0" time="0.633">
-    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T07:02:22.206Z" hostname="macOS-Quangs-Mac-mini.local" tests="2" failures="0" errors="0" skipped="0" time="0.017">
+<testsuites name="vitest tests" tests="2" failures="0" errors="0" time="0.596">
+    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T07:48:53.420Z" hostname="macOS-Quangs-Mac-mini.local" tests="2" failures="0" errors="0" skipped="0" time="0.016">
         <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
             <system-err>
 Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
@@ -9,7 +9,7 @@ Warning: unmountComponentAtNode is deprecated and will be removed in the next ma
 
             </system-err>
         </testcase>
-        <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0.001">
+        <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0">
         </testcase>
     </testsuite>
 </testsuites>
