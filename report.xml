@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="2" failures="0" errors="0" time="0.599">
-    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T03:27:30.993Z" hostname="macOS-Quangs-Mac-mini.local" tests="2" failures="0" errors="0" skipped="0" time="0.017">
+<testsuites name="vitest tests" tests="2" failures="0" errors="0" time="0.583">
+    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T03:36:44.268Z" hostname="macOS-Quangs-Mac-mini.local" tests="2" failures="0" errors="0" skipped="0" time="0.016">
         <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
             <system-err>
 Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
