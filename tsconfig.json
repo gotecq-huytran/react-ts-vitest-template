@@ -3,7 +3,7 @@
     "baseUrl": "src",
     "declarationDir": "lib",
     "declaration": true,
-    "target": "ESNext",
+    "target": "es5",
     "module": "ESNext",
     "moduleResolution": "node",
     "lib": [

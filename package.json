@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "ttsc -v && yarn tsc && vite build  && yarn gulp",
+    "build": "ttsc -v && yarn tsc && vite build; yarn gulp",
     "tsc": "ttsc",
     "preview": "vite preview",
     "test": "vitest run -c vitest.config.ts",
