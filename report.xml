@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="vitest tests" tests="3" failures="1" errors="0" time="0.448">
-  <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T09:19:02.659Z"
+<testsuites name="vitest tests" tests="3" failures="1" errors="0" time="0.545">
+  <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T09:50:25.892Z"
     hostname="macOS-Quangs-Mac-mini.local" tests="3" failures="1" errors="0" skipped="0"
     time="0.021">
-    <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
+    <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.017">
+      <system-err>
+        Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from
+        `react` instead of `react-dom/test-utils`. See
+        https://react.dev/warnings/react-dom-test-utils for more info.
+        Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until
+        you switch to the new API, your app will behave as if it&apos;s running React 17. Learn
+        more: https://reactjs.org/link/switch-to-createroot
+        Warning: unmountComponentAtNode is deprecated and will be removed in the next major release.
+        Switch to the createRoot API. Learn more: https://reactjs.org/link/switch-to-createroot
+
+      </system-err>
     </testcase>
     <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0">
     </testcase>
