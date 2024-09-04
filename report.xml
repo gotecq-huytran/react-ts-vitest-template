@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="vitest tests" tests="3" failures="1" errors="0" time="0.545">
-  <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T09:50:25.892Z"
+<testsuites name="vitest tests" tests="3" failures="1" errors="0" time="0.569">
+  <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T09:55:33.829Z"
     hostname="macOS-Quangs-Mac-mini.local" tests="3" failures="1" errors="0" skipped="0"
-    time="0.021">
-    <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.017">
+    time="0.019">
+    <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
       <system-err>
         Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from
         `react` instead of `react-dom/test-utils`. See
@@ -18,8 +18,9 @@
     </testcase>
     <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0">
     </testcase>
-    <testcase classname="Test 2" name="Exception in test" time="0">
-      <failure>AssertionError: expected 4 to be 3 // Object.is equality
+    <testcase classname="lib/__test__/hello.test.js" name="adds 1 + 2 to equal 3" time="0.003">
+      <failure>
+        AssertionError: expected 4 to be 3 // Object.is equality
 
         - Expected
         + Received
