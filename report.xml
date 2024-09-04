@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="2" failures="0" errors="0" time="0.599">
-    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T03:27:30.993Z" hostname="macOS-Quangs-Mac-mini.local" tests="2" failures="0" errors="0" skipped="0" time="0.017">
-        <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.016">
+<testsuites name="vitest tests" tests="2" failures="0" errors="0" time="0.606">
+    <testsuite name="lib/__test__/hello.test.js" timestamp="2024-09-04T04:45:10.211Z" hostname="macOS-Quangs-Mac-mini.local" tests="2" failures="0" errors="0" skipped="0" time="0.017">
+        <testcase classname="lib/__test__/hello.test.js" name="renders welcome message" time="0.015">
             <system-err>
 Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
 Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it&apos;s running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
