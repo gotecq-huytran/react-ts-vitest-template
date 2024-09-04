@@ -1,68 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites disabled="0" errors="0" name="checkov" failures="2" tests="6" time="23.34">
-    <testsuite disabled="0" errors="0" failures="2" name="terraform scan" skipped="1" tests="5" time="12.34">
-        <properties>
-            <property name="directory" value="example"/>
-            <property name="output" value="['junitxml']"/>
-        </properties>
+<testsuites name="jest tests" tests="6" failures="4" errors="0" time="1.36">
+  <testsuite name="__tests__\main.test.js" errors="0" failures="3" skipped="0" timestamp="2020-10-27T21:39:41" time="0.486" tests="4">
+    <testcase classname="Test 1" name="Passing test" time="0.001">
+    </testcase>
+    <testcase classname="Test 1 › Test 1.1" name="Failing test" time="0.002">
+      <failure>Error: expect(received).toBeTruthy()
 
-        <testcase name="[CRITICAL][CKV_AWS_20] S3 Bucket has an ACL defined which allows public READ access." classname="/main.tf.aws_s3_bucket.example" file="/main.tf"/>
-        <testcase name="[CRITICAL][CKV_AWS_20] S3 Bucket has an ACL defined which allows public READ access." classname="/main.tf.aws_s3_bucket.example_2" file="/main.tf"/>
-
-        <testcase name="[HIGH][CKV_AWS_21] Ensure all data stored in the S3 bucket have versioning enabled" classname="/main.tf.aws_s3_bucket.example" file="/main.tf">
-            <failure type="failure" message="Ensure all data stored in the S3 bucket have versioning enabled">
-                Resource: aws_s3_bucket.example
-                File: /main.tf: 6-9
-                Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3_16-enable-versioning
-                
-                    6 | resource "aws_s3_bucket" "example" {
-                    7 |   # checkov:skip=CKV_AWS_18: logging not needed on a logging bucket
-                    8 |   bucket = "test-12345"
-                    9 | }
-            </failure>
-        </testcase>
-        <testcase name="[HIGH][CKV_AWS_21] Ensure all data stored in the S3 bucket have versioning enabled" classname="/main.tf.aws_s3_bucket.example_2" file="/main.tf">
-            <failure type="failure" message="Ensure all data stored in the S3 bucket have versioning enabled">
-                Resource: aws_s3_bucket.example_2
-                File: /main.tf: 12-15
-                Guideline: https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3_16-enable-versioning
-                
-                    12 | resource "aws_s3_bucket" "example_2" {
-                    13 |   # checkov:skip=CKV_AWS_18: logging not needed on a logging bucket
-                    14 |   bucket = "test-12345"
-                    15 | }
-            </failure>
-        </testcase>
-
-        <testcase name="[MEDIUM][CKV_AWS_18] Ensure the S3 bucket has access logging enabled" classname="/main.tf.aws_s3_bucket.example" file="/main.tf">
-            <skipped type="skipped" message="logging not needed on a logging bucket"/>
-        </testcase>
-    </testsuite>
-    <testsuite disabled="0" errors="0" failures="0" name="cloudformation scan" skipped="0" tests="1" time="1.00">
-        <testcase name="[LOW][CKV_AWS_20] S3 Bucket has an ACL defined which allows public READ access." classname="/cfn.yaml.AWS::S3::Bucket.Example" file="/cfn.yaml"/>
-    </testsuite>
-    <testsuite disabled="0" errors="0" failures="2" name="sca_package scan" skipped="1" tests="3" time="10.00">
-        <testcase name="[HIGH][CVE-2013-7370] connect: 2.6.0" classname="/package-lock.json.connect" file="/package-lock.json">
-            <failure type="failure" message="CVE-2013-7370 found in connect: 2.6.0">
-                Description: A nil pointer dereference in the golang.org/x/crypto/ssh component through v0.0.0-20201203163018-be400aefbc4c for Go allows remote attackers to cause a denial of service against SSH servers.
-                Link: https://nvd.nist.gov/vuln/detail/CVE-2020-29652
-                Published Date: 2020-12-17T21:31:00+02:00
-                Base Score: 7.5
-                Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-                Risk Factors: ["Has fix", "High severity", "Attack complexity: low", "Attack vector: network", "DoS"]
-                Fix Details:
-                  Status: fixed in 2.8.1 
-                  Fixed Version: 2.8.1
-
-                Resource: package-lock.json.connect
-                File: /package-lock.json: 0-0
-                
-                    0 | connect: 2.6.0
-            </failure>
-        </testcase>
-
-        <testcase name="[HIGH][CVE-2013-7370] django: 1.2" classname="/requirements.txt.django" file="/requirements.txt">
-            <skipped type="skipped" message="CVE-2019-19844 skipped for django: 1.2"/>
-        </testcase>
-    </testsuite>
+Received: false
+    at Object.&lt;anonymous&gt; (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\__tests__\main.test.js:10:21)
+    at Object.asyncJestTest (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Test 1 › Test 1.1" name="Exception in target unit" time="0">
+      <failure>Error: Some error
+    at Object.throwError (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\lib\main.js:2:9)
+    at Object.&lt;anonymous&gt; (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\__tests__\main.test.js:14:11)
+    at Object.asyncJestTest (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+    <testcase classname="Test 2" name="Exception in test" time="0">
+      <failure>Error: Some error
+    at Object.&lt;anonymous&gt; (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\__tests__\main.test.js:21:11)
+    at Object.asyncJestTest (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+    at C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="__tests__\second.test.js" errors="0" failures="1" skipped="1" timestamp="2020-10-27T21:39:41" time="0.082" tests="2">
+    <testcase classname="" name="Timeout test" time="0.004">
+      <failure>: Timeout - Async callback was not invoked within the 1 ms timeout specified by jest.setTimeout.Timeout - Async callback was not invoked within the 1 ms timeout specified by jest.setTimeout.Error: 
+    at new Spec (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmine\Spec.js:116:22)
+    at new Spec (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\setup_jest_globals.js:78:9)
+    at specFactory (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmine\Env.js:523:24)
+    at Env.it (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmine\Env.js:592:24)
+    at Env.it (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:134:23)
+    at it (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\jasmine\jasmineLight.js:100:21)
+    at Object.&lt;anonymous&gt; (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\__tests__\second.test.js:1:34)
+    at Runtime._execModule (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-runtime\build\index.js:1245:24)
+    at Runtime._loadModule (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-runtime\build\index.js:844:12)
+    at Runtime.requireModule (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-runtime\build\index.js:694:10)
+    at jasmine2 (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-jasmine2\build\index.js:230:13)
+    at runTestInternal (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-runner\build\runTest.js:380:22)
+    at runTest (C:\Users\Michal\Workspace\dorny\test-check\reports\jest\node_modules\jest-runner\build\runTest.js:472:34)</failure>
+    </testcase>
+    <testcase classname="" name="Skipped test" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
 </testsuites>
