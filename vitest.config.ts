@@ -11,7 +11,7 @@ export default defineConfig({
         dir: './lib/__test__/',
         reporters: ['default', 'junit'],
         outputFile: {
-            junit: './report.xml'
+            junit: './raw-report.xml'
         },
         setupFiles: "./lib/__test__/setup.js",
         alias: {

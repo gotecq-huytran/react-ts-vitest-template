@@ -59,6 +59,9 @@ jobs:
       - name: Test Library
         run: yarn test
 
+      - name: Customize JUnit Report
+        run: node ./src/__test__/postprocess-junit.js
+
       - name: Test Report
         uses: dorny/test-reporter@v1
         if: success() || failure()    # run this step even if previous step failed
